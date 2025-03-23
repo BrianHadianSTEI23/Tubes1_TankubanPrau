@@ -22,13 +22,13 @@ ii. Requirement program dan instalasi
           - Clone atau Download Repository ini:
 
 iii. Command atau langkah-langkah dalam meng-compile atau build program
-      1. Buka terminal atau command prompt di folder proyek.
-      2. Jalankan perintah untuk membangun program bot" ./{XXX}.cmd " , XXX = nama bot yang dipilih, pada terminal.
-      3. Atau jalankan perintah berikut: " dotnet build ". Jika build berhasil, jalankan bot dengan: " dotnet run "
-      4. Untuk menguji bot dalam pertempuran, tambahkan folder boot root directories pada menu config di Robocode Tank Royale 
-      5. Jalankan pertandingan dengan start battle. 
-      6. Boot bot yang akan digunakan
-      7. Jalankan permainan. 
+        1. Clone repository ini
+        2. Buka file “ robocode-tankroyale-gui-0.30.0.jar “ atau jalankan dengan terminal “java -jar robocode-tankroyale-gui-0.30.0.jar”
+        3. Tambahkan folder boot root directories pada menu config di Robocode Tank Royale. 3. Klik start battle pada menu battle. 
+        4. Pilih bot yang ingin digunakan. Lalu boot bot yang akan digunakan . 
+        5. Add bot yang akan dijalankan pada permainan.
+        6. Jalankan permainan dengan start battle.
+
 
 iv. Author (identitas pembuat)
     - Stefan Mattew Susanto           13523020
