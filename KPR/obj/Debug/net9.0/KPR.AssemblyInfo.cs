@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KPR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ee058c9874e983023d5ff7e47fd2cf4e3858777")]
 [assembly: System.Reflection.AssemblyProductAttribute("KPR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KPR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
