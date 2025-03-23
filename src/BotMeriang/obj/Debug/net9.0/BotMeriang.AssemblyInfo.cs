@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BotMeriang")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff04e6124c8006a306124984c631ac54b573ae0f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c0e4e21187d45e242335a84b21e1f650be616e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BotMeriang")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BotMeriang")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

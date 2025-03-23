@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
@@ -15,6 +16,13 @@ public class BotMeriang : Bot
 
     public override void Run()
     {
+        BodyColor = Color.FromArgb(141, 186, 183);
+        TurretColor = Color.FromArgb(66, 82, 37);
+        GunColor = Color.FromArgb(175, 126, 67);
+        BulletColor = Color.FromArgb(135, 143, 119);
+        RadarColor = Color.FromArgb(135, 143, 119);
+        ScanColor = Color.FromArgb(135, 143, 119);
+
         GunTurnRate = 15;
 
         while (IsRunning)

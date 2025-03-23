@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nQc0FzAUdjY=",
+  "dgSpecHash": "XaEYwiokJK0=",
   "success": true,
-  "projectFilePath": "C:\\coding\\Tingkat 2\\Tubes Stima 1\\tubes-1-IF2211-tankuban-prau\\BotMeriang\\BotMeriang.csproj",
+  "projectFilePath": "C:\\coding\\Tingkat 2\\Tubes Stima 1\\tubes-1-IF2211-tankuban-prau\\src\\BotMeriang\\BotMeriang.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
     "C:\\Users\\stefa\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
