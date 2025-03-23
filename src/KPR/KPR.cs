@@ -1,6 +1,9 @@
 using System;
+using System.Drawing;
+
 // using System.Collections.Generic;
 // using Robocode;
+
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
@@ -46,6 +49,13 @@ public class KPR : Bot
     // Called when a new round starts
     public override void Run()
     {
+        BodyColor = Color.FromArgb(0, 102, 204);   // Deep Blue (Trust, Stability, Official Government Programs)
+        TurretColor = Color.FromArgb(255, 204, 0); // Golden Yellow (Prosperity, Economic Growth, Rumah Impian)
+        GunColor = Color.FromArgb(204, 51, 0);     // Brick Red (Traditional Roofs, Housing Developments)
+        BulletColor = Color.FromArgb(34, 139, 34); // Green (Sustainability, Future Growth)
+        RadarColor = Color.FromArgb(255, 255, 255); // White (Transparency, Government Trust)
+        ScanColor = Color.FromArgb(255, 255, 255);  // White (Clear Vision for Housing Access)
+        
         if (!IsEmptyEnemyArray(enemyArray))
         {
             for (int i = 0; i < MAX_TANK_COUNT; i++)

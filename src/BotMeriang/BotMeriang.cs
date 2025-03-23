@@ -18,12 +18,13 @@ public class BotMeriang : Bot
     public override void Run()
     {
         // Set warna bot
-        BodyColor = Color.FromArgb(141, 186, 183);
-        TurretColor = Color.FromArgb(66, 82, 37);
-        GunColor = Color.FromArgb(175, 126, 67);
-        BulletColor = Color.FromArgb(135, 143, 119);
-        RadarColor = Color.FromArgb(135, 143, 119);
-        ScanColor = Color.FromArgb(135, 143, 119);
+        BodyColor = Color.FromArgb(255, 0, 0);     // Bold Red (Nationalism, Struggle, Megawati’s Party Identity)
+        TurretColor = Color.FromArgb(0, 0, 0);     // Deep Black (Bull Symbol, Strength, Party Discipline)
+        GunColor = Color.FromArgb(255, 204, 0);    // Golden Yellow (Power, Government Influence, Prosperity)
+        BulletColor = Color.FromArgb(255, 255, 255); // White (Sukarno’s Ideals, People’s Welfare)
+        RadarColor = Color.FromArgb(153, 0, 0);    // Dark Red (Loyalty, Old Guard, Political Machine)
+        ScanColor = Color.FromArgb(0, 0, 0);       // Black (Authority, Command, "Banteng Solid" Discipline)
+
 
         GunTurnRate = 15;
 

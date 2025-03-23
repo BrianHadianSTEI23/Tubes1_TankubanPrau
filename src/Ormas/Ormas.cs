@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
@@ -26,6 +27,14 @@ public class Ormas : Bot
     // Called when a new round starts
     public override void Run()
     {
+        BodyColor = Color.FromArgb(204, 0, 0);     // Blood Red (Power, Militancy, Fear, Aggression)
+        TurretColor = Color.FromArgb(255, 140, 0); // Fiery Orange (Influence, Loud Protests, Boldness)
+        GunColor = Color.FromArgb(0, 0, 0);        // Deep Black (Secrecy, Shadows, Underground Movements)
+        BulletColor = Color.FromArgb(255, 255, 0); // Bright Yellow (Public Presence, Provocation, Populism)
+        RadarColor = Color.FromArgb(128, 128, 128); // Neutral Gray (Uncertainty, Hidden Intentions, Duality)
+        ScanColor = Color.FromArgb(50, 205, 50);   // Bright Green (Solidarity, Brotherhood, Internal Structure)
+
+
         while (IsRunning)
         {
             if (Energy >= 20)
