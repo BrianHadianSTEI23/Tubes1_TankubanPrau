@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChillPips")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff04e6124c8006a306124984c631ac54b573ae0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChillPips")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChillPips")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

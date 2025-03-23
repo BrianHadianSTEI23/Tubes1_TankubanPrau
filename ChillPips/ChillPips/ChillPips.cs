@@ -1,11 +1,12 @@
 using System;
 using System.Drawing;
+using System.Xml.Linq;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
 public class ChillPips : Bot
 {
-    double moveAmount;
+    // double moveAmount;
     // main : starting our bot
     static void Main(string[] args){
         new ChillPips().Start();
@@ -30,24 +31,26 @@ public class ChillPips : Bot
         RadarColor = Color.FromArgb(135, 143, 119);
         ScanColor = Color.FromArgb(135, 143, 119);
 
-        moveAmount = Math.Max(ArenaHeight - Y, ArenaWidth - X) - jarakAmanWall; // jarak aman terjauh dari posisi skrg
+        // moveAmount = Math.Max(ArenaHeight - Y, ArenaWidth - X) - jarakAmanWall; // jarak aman terjauh dari posisi skrg
         MaxSpeed = 8;
 
         TurnLeft(DirectionToWall(X, Y));
         Forward(DistanceToWall(X, Y));
         TurnRight(90);
+        // Forward(SafeMoveAmount(Direction));
 
         while (IsRunning)
         {   
             MaxSpeed = random.Next(5, 9);
             SetTurnGunRight(double.PositiveInfinity);
 
-            if (movingForward) {
-                Forward(moveAmount);
+            if (movingForward == true) {
+                Forward(SafeMoveAmountForward(Direction));
                 TurnRight(90);
+                
             }
             else {
-                Back(moveAmount);
+                Back(SafeMoveAmountBackward(Direction));
                 TurnLeft(90);
             }
             
@@ -56,17 +59,37 @@ public class ChillPips : Bot
         
     }
 
-    // private double SafeMoveAmount(double direction) 
-    // {
-    //     if (direction == 0 || direction == 180) {
-    //         return ArenaWidth - X - jarakAmanWall;
-    //     }
-    //     if (direction == 90 || direction == 270) {
-    //         return ArenaHeight - Y - jarakAmanWall;
-    //     }
+    private double SafeMoveAmountForward(double direction) 
+    {
+        if (direction == 0) {
+            return Math.Abs(ArenaWidth - X - jarakAmanWall);
+        }
+        else if (direction == 90) {
+            return Math.Abs(ArenaHeight - Y - jarakAmanWall);
+        }
+        else if (direction == 180) {
+            return (X - jarakAmanWall);
+        }
+        else {
+            return (Y - jarakAmanWall);
+        }
+    }
 
-    //     return 0;
-    // }
+    private double SafeMoveAmountBackward(double direction) 
+    {
+        if (direction == 0) {
+            return (X - jarakAmanWall);
+        }
+        else if (direction == 90) {
+            return (Y - jarakAmanWall);
+        }
+        else if (direction == 180) {
+            return Math.Abs(ArenaWidth - X - jarakAmanWall);
+        }
+        else {
+            return Math.Abs(ArenaHeight - Y - jarakAmanWall);
+        }
+    }
 
     private double DistanceToWall(double x, double y) 
     {
@@ -96,6 +119,8 @@ public class ChillPips : Bot
     public override void OnScannedBot(ScannedBotEvent e)
     {   
         if (DistanceTo(e.X, e.Y) <= jarakAmanMusuh){
+            Fire(3);
+        } else {
             Fire(1);
         }
     }

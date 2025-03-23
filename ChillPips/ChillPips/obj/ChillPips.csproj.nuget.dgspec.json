@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyFirstBot\\ChillPips\\ChillPips.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\Stima\\Tubes1\\tubes-1-IF2211-tankuban-prau\\ChillPips\\ChillPips\\ChillPips.csproj": {}
   },
   "projects": {
-    "D:\\MyFirstBot\\ChillPips\\ChillPips.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\Stima\\Tubes1\\tubes-1-IF2211-tankuban-prau\\ChillPips\\ChillPips\\ChillPips.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyFirstBot\\ChillPips\\ChillPips.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\Stima\\Tubes1\\tubes-1-IF2211-tankuban-prau\\ChillPips\\ChillPips\\ChillPips.csproj",
         "projectName": "ChillPips",
-        "projectPath": "D:\\MyFirstBot\\ChillPips\\ChillPips.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\Stima\\Tubes1\\tubes-1-IF2211-tankuban-prau\\ChillPips\\ChillPips\\ChillPips.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\MyFirstBot\\ChillPips\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\Stima\\Tubes1\\tubes-1-IF2211-tankuban-prau\\ChillPips\\ChillPips\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
