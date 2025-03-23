@@ -24,7 +24,10 @@ public class KPR : Bot
 
     // static int targetID = -1;
     int enemyCount = 0;
-    static ScannedBotEvent[] enemyArray = new ScannedBotEvent[10]; // Max 10 enemies
+
+    ScannedBotEvent[] cluster;
+
+    ScannedBotEvent[] enemyArray = new ScannedBotEvent[MAX_TANK_COUNT]; // Max 10 enemies
 
     // Constructor: Load the config file and initiate enemyArray
     public KPR() : base(BotInfo.FromFile("KPR.json")){
@@ -43,34 +46,60 @@ public class KPR : Bot
     // Called when a new round starts
     public override void Run()
     {
+        if (!IsEmptyEnemyArray(enemyArray))
+        {
+            for (int i = 0; i < MAX_TANK_COUNT; i++)
+            {
+                enemyArray[i] = null;
+            }
+        } 
+        Console.WriteLine($"is enemy array empty : {IsEmptyEnemyArray(enemyArray)}");
+        // Console.WriteLine("help");
         while (IsRunning)
         {
             if (IsEmptyEnemyArray(enemyArray))
             {
                 TurnRadarLeft(360);
-                Console.WriteLine("Dor!");
             } else { // enemy Array is not empty
                 TurnGunLeft(45);
                 Fire(1);
                 // Forward(50);
             }
         }
+        
+        // emptying the enemyArray
+        // enemyCount = 0;
+        enemyArray = null;
+        cluster = null;
     }
 
     // When we see another bot -> store it & fire!
     public override void OnScannedBot(ScannedBotEvent evt)
     {
-        if (enemyCount < 10)
-        {
-            enemyArray[enemyCount] = evt;
-            enemyCount++;
-        }
-        // get the list of the desired bots
-        ScannedBotEvent[] cluster = EnemyEventsOfSmallestDistance(enemyArray);
+        if (IsEmptyEnemyArray(enemyArray)) {
+            if (enemyCount < 10)
+            {
+                enemyArray[enemyCount] = evt;
+                enemyCount++;
+            }
+            // get the list of the desired bots
+            ScannedBotEvent[] sortedEnemyArray = EnemyEventsOfSmallestDistance(enemyArray);
+            // get array containing three of the most lowest energy 
+            clusterLength = Math.Min(3, enemyCount); 
+            ScannedBotEvent[] cluster = new ScannedBotEvent[clusterLength];
+            for (int k = 0; k < clusterLength; k++)
+            {
+                cluster[k] = sortedEnemyArray[k];
+            }
+            Console.WriteLine(enemyCount);
+            for (int i = 0; i < enemyCount; i++)
+            {
+                Console.WriteLine($"list of bot : {cluster[i].ScannedBotId}");
+            }
 
-        // chase cluster if scannedbot not empty
-        ChaseCluster(cluster);
-
+            // chase cluster if scannedbot not empty
+            ChaseCluster(cluster);
+        } 
     }
 
     // if the bot is shot at, then it will move 90 degrees of its current position
@@ -109,15 +138,7 @@ public class KPR : Bot
             scannedBots[j] = currBot;
         }
 
-
-        // get array containing three of the most lowest energy 
-        clusterLength = Math.Min(3, enemyCount); 
-        ScannedBotEvent[] cluster = new ScannedBotEvent[clusterLength];
-        for (int k = 0; k < clusterLength; k++)
-        {
-            cluster[k] = scannedBots[k];
-        }
-        return cluster;
+        return scannedBots;
     }
 
     // if the bot is rammed, it will move 90 degrees of its current position (evade)
@@ -143,7 +164,10 @@ public class KPR : Bot
             enemyArray[i] = null;
         }
         // scan again
+        TurnLeft(90);
+        Forward(80);
         TurnRadarLeft(360);
+        enemyCount = 0;
     }
 
     // if the bot hit wall, then it scan again 
@@ -155,17 +179,20 @@ public class KPR : Bot
             enemyArray[i] = null;
         }
         // scan again
+        TurnLeft(90);
+        Forward(80);
         TurnRadarLeft(360);
+        enemyCount = 0;
     }
 
     // func : get length of the cluster
-    private int GetClusterLength(ScannedBotEvent[] cluster){
-        int i = 0;
-        while (cluster[i] != null){
-            i++;
-        }
-        return i;
-    }
+    // private int GetClusterLength(ScannedBotEvent[] cluster){
+    //     int i = 0;
+    //     while (cluster[i] != null){
+    //         i++;
+    //     }
+    //     return i;
+    // }
 
     // chase the cluster
     private void ChaseCluster(ScannedBotEvent[] cluster)
