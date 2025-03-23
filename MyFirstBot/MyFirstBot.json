@@ -1,0 +1,10 @@
+{
+    "name": "My First Bot",
+    "version": "1.0",
+    "authors": [ "Tankuban Prau" ],
+    "description": "My first bot",
+    "homepage": "«insert link to a home page for your bot»",
+    "countryCodes": [ "IDN" ],
+    "platform": ".Net 9.0",
+    "programmingLang": "C# 10.0"
+}

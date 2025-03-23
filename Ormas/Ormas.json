@@ -1,0 +1,10 @@
+{
+    "name": "Ormas",
+    "version": "1.0",
+    "authors": [ "Tankuban Prau" ],
+    "description": "Skema Algoritma 2 ",
+    "homepage": "",
+    "countryCodes": [ "IDN" ],
+    "platform": ".Net 9.0",
+    "programmingLang": "C# 10.0"
+}
