@@ -24,10 +24,11 @@ ii. Requirement program dan instalasi
 iii. Command atau langkah-langkah dalam meng-compile atau build program
         1. Clone repository ini
         2. Buka file “ robocode-tankroyale-gui-0.30.0.jar “ atau jalankan dengan terminal “java -jar robocode-tankroyale-gui-0.30.0.jar”
-        3. Tambahkan folder boot root directories pada menu config di Robocode Tank Royale. 3. Klik start battle pada menu battle. 
-        4. Pilih bot yang ingin digunakan. Lalu boot bot yang akan digunakan . 
-        5. Add bot yang akan dijalankan pada permainan.
-        6. Jalankan permainan dengan start battle.
+        3. Tambahkan folder boot root directories pada menu config di Robocode Tank Royale. 
+        4. Klik start battle pada menu battle. 
+        5. Pilih bot yang ingin digunakan. Lalu boot bot yang akan digunakan . 
+        6. Add bot yang akan dijalankan pada permainan.
+        7. Jalankan permainan dengan start battle.
 
 
 iv. Author (identitas pembuat)
