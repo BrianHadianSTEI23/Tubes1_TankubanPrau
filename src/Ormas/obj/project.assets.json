@@ -823,11 +823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\robocodeBots\\Ormas\\Ormas.csproj",
+      "projectUniqueName": "H:\\robocodeBots\\src\\Ormas\\Ormas.csproj",
       "projectName": "Ormas",
-      "projectPath": "H:\\robocodeBots\\Ormas\\Ormas.csproj",
+      "projectPath": "H:\\robocodeBots\\src\\Ormas\\Ormas.csproj",
       "packagesPath": "C:\\Users\\BRIAN\\.nuget\\packages\\",
-      "outputPath": "H:\\robocodeBots\\Ormas\\obj\\",
+      "outputPath": "H:\\robocodeBots\\src\\Ormas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BRIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"

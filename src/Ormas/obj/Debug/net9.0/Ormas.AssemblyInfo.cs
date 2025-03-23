@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ormas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6686dee5a0f3e52fe1e4d52ff34c37a8e4a5f821")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22437138952492a7b9b9d21fda789970f4ccba65")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ormas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ormas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

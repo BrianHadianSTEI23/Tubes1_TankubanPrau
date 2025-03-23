@@ -818,19 +818,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stefa\\.nuget\\packages\\": {}
+    "C:\\Users\\BRIAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\coding\\Tingkat 2\\Tubes Stima 1\\tubes-1-IF2211-tankuban-prau\\src\\BotMeriang\\BotMeriang.csproj",
+      "projectUniqueName": "H:\\robocodeBots\\src\\BotMeriang\\BotMeriang.csproj",
       "projectName": "BotMeriang",
-      "projectPath": "C:\\coding\\Tingkat 2\\Tubes Stima 1\\tubes-1-IF2211-tankuban-prau\\src\\BotMeriang\\BotMeriang.csproj",
-      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
-      "outputPath": "C:\\coding\\Tingkat 2\\Tubes Stima 1\\tubes-1-IF2211-tankuban-prau\\src\\BotMeriang\\obj\\",
+      "projectPath": "H:\\robocodeBots\\src\\BotMeriang\\BotMeriang.csproj",
+      "packagesPath": "C:\\Users\\BRIAN\\.nuget\\packages\\",
+      "outputPath": "H:\\robocodeBots\\src\\BotMeriang\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\BRIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

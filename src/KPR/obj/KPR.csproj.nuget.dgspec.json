@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\robocodeBots\\KPR\\KPR.csproj": {}
+    "H:\\robocodeBots\\src\\KPR\\KPR.csproj": {}
   },
   "projects": {
-    "H:\\robocodeBots\\KPR\\KPR.csproj": {
+    "H:\\robocodeBots\\src\\KPR\\KPR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\robocodeBots\\KPR\\KPR.csproj",
+        "projectUniqueName": "H:\\robocodeBots\\src\\KPR\\KPR.csproj",
         "projectName": "KPR",
-        "projectPath": "H:\\robocodeBots\\KPR\\KPR.csproj",
+        "projectPath": "H:\\robocodeBots\\src\\KPR\\KPR.csproj",
         "packagesPath": "C:\\Users\\BRIAN\\.nuget\\packages\\",
-        "outputPath": "H:\\robocodeBots\\KPR\\obj\\",
+        "outputPath": "H:\\robocodeBots\\src\\KPR\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\BRIAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
