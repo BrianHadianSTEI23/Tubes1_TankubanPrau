@@ -5,14 +5,14 @@ A Robocode Tank Battlle Royale Remake with own-designed tank bots that has each 
 
 
 i. Deskripsi Singkat
-        1. BotMeriang (Greedy by Survival).
-            - Bertahan hidup sebagai prioritas utama dengan menghindari peluru dan tetap bergerak.
-            - Posisi strategis di pusat arena untuk meningkatkan peluang bertahan.
-            - Gerakan melingkar untuk menghindari tembakan dan tetap aktif di arena.
-            - Kecepatan maksimal untuk menghindari peluru musuh.
-            - Menabrak musuh yang menempel di dinding untuk mengacaukan strategi lawan.
-            - Menembak dengan firepower besar jika musuh dekat, firepower kecil jika jauh untuk efisiensi energi.
-            - Jika energi di bawah 20, bot fokus bertahan dan menghindar.
+1. BotMeriang (Greedy by Survival).
+- Bertahan hidup sebagai prioritas utama dengan menghindari peluru dan tetap bergerak.
+- Posisi strategis di pusat arena untuk meningkatkan peluang bertahan.
+- Gerakan melingkar untuk menghindari tembakan dan tetap aktif di arena.
+- Kecepatan maksimal untuk menghindari peluru musuh.
+- Menabrak musuh yang menempel di dinding untuk mengacaukan strategi lawan.
+- Menembak dengan firepower besar jika musuh dekat, firepower kecil jika jauh untuk efisiensi energi.
+- Jika energi di bawah 20, bot fokus bertahan dan menghindar.
 2. Bot Ormas (Greedy by Target)
 - Menyerang sebanyak mungkin dengan strategi tailing (mengekor target).
 - Mendeteksi musuh terdekat (>100 pixel) dan mengikutinya.
